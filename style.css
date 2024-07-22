@@ -1,67 +1,71 @@
 body {
-  font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-  max-width: 400px;
-  margin: 50px auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-input[type="text"], input[type="number"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
 }
 
 button:hover {
-  background-color: #0056b3;
+    background-color: #218838;
 }
 
-#items-list {
-  margin-top: 20px;
+#expense-list {
+    margin-top: 20px;
 }
 
-.item {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    background: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
-.item div {
-  flex-grow: 1;
+.expense-item span {
+    display: block;
 }
 
-button.bought {
-  background-color: #28a745;
-  margin-left: 10px;
-}
-
-button.bought:hover {
-  background-color: #218838;
-}
-
-button.edit {
-  background-color: #ffc107;
-  margin-left: 10px;
-}
-
-button.edit:hover {
-  background-color: #e0a800;
-}
-
-#total-price {
-  margin-top: 20px;
-  font-size: 18px;
+@media (max-width: 600px) {
+    .expense-item {
+        flex-direction: column;
+    }
 }
